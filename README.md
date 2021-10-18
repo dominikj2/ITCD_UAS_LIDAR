@@ -26,5 +26,5 @@ To run this algorithm, the following information and data is required:
 * **FILE_FIELD_DATA_PREFIX:** PREFIX FOR FIELD DATA FILE NAMES (i.e. prefix_1.shp WHERE 1 IS THE FLIGHT_ID CORRESPONDING TO THE PLOT CENTROID FILE’S “Flight”
 * **FIELD DATA** IS A SHAPEFILE WITH ATTRIBUTE “TID” TO REPRESENT THE UNIQUE TREE IDENTIFIER FOR EACH STEM IN PLOT.
 
-Example data is provided in DATA_EXAMPLE.
+Example data is provided in DATA_EXAMPLE. Note that LAZ file is too big to upload on GITHUB. 
 
