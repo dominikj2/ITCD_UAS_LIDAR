@@ -162,7 +162,7 @@ for(v in 1:length(Field_Data_ID)){
   LAS_Dir <- paste(FOLDER_ITCD, "/Flight_", Flight_ID, "/LAS", sep="")
   Files_Done <- list.files(LAS_Dir, pattern = paste("F", Flight_ID, "_LAS_TID_Within_30Plot.laz", sep=""))
   if(length(Files_Done) == 1){  
-    Field_GISCorr_Shp <- readOGR(dsn = paste(FOLDER_ITCD, "/" ,FOLDER_FIELD_DATA_SHAPEFILE,  "/Flight_",Flight_ID , sep=""),
+    Field_GISCorr_Shp <- readOGR(dsn = FOLDER_FIELD_DATA_SHAPEFILE,
                                  layer = paste(FILE_FIELD_DATA_PREFIX, Flight_ID, sep=""))
     Field_DF <-as.data.frame(cbind(Field_GISCorr_Shp@coords, Field_GISCorr_Shp@data))
     colnames(Field_DF)[1:2] <- c("X","Y")
